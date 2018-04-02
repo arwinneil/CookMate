@@ -13,7 +13,12 @@ namespace CookMate
 		{
 			InitializeComponent();
 
-			MainPage = new CookMate.MainPage();
+            MainPage = new NavigationPage(new CookMate.HomePage()
+            {
+                Title = "CookMate",
+            });
+
+
 		}
 
 		protected override void OnStart ()

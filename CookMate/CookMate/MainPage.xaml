@@ -13,7 +13,7 @@
                 HorizontalOptions="CenterAndExpand" FontSize="Large"/>
 
 
-            <cv:CarouselView x:Name="Carou" Margin="20"  Margin="15">
+            <cv:CarouselView x:Name="Carou" Margin="20"  >
                 <cv:CarouselView.ItemTemplate >
                     <DataTemplate >
                         <Frame HasShadow="True"  VerticalOptions="FillAndExpand" >

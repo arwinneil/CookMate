@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CookMate.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout>
+                <Grid Margin="10" ColumnSpacing="20" RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="230"></RowDefinition>
+                        <RowDefinition Height="230"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                   
+                        
+
+                    <!--Item-->
+                    <Frame HasShadow="True" Padding="0">
+                        <StackLayout>
+                            <Image Source="spaget.jpg" Aspect="AspectFit" />
+                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <!--Item-->
+
+                    <!--Item-->
+                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="0">
+                        <StackLayout>
+                            <Image Source="spaget.jpg" Aspect="AspectFit" />
+                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <!--Item-->
+
+                    <!--Item-->
+                    <Frame HasShadow="True" Padding="0" Grid.Column="0" Grid.Row="1">
+                        <StackLayout>
+                            <Image Source="spaget.jpg" Aspect="AspectFit" />
+                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <!--Item-->
+
+                    <!--Item-->
+                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="1">
+                        <StackLayout>
+                            <Image Source="spaget.jpg" Aspect="AspectFit" />
+                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <!--Item-->
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

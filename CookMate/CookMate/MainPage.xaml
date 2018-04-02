@@ -17,7 +17,7 @@
                 <cv:CarouselView.ItemTemplate >
                     <DataTemplate >
                         <Frame HasShadow="True"  VerticalOptions="FillAndExpand" >
-                            <Label  Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="80" TextColor="CornflowerBlue"/>
+                            <Label  Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30" TextColor="CornflowerBlue"/>
 
                         </Frame>
                     </DataTemplate>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CookMate.DetailPage">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="Fill">
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Image Source="spaget.jpg" HeightRequest="300" Aspect="AspectFill"></Image>
+                <Label Text="Spaghetti" FontSize="50"  Margin="10,0,10,0"></Label>
+                <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="20" Margin="10,0,10,10"></Label>
+            </StackLayout>
+
+            <Button Text="Start Cooking" BackgroundColor="#2196F3" TextColor="White" HorizontalOptions="Fill" Margin="0,0,0,10" Pressed="Button_Pressed"/>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

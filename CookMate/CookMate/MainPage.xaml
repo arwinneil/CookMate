@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CookMate"
+             x:Class="CookMate.MainPage"
+            xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+
+
+>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="label" Text="Welcome to Xamarin.Forms!"
+                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+
+
+            <cv:CarouselView x:Name="Carou" Margin="20"  Margin="15">
+                <cv:CarouselView.ItemTemplate >
+                    <DataTemplate >
+                        <Frame HasShadow="True"  VerticalOptions="FillAndExpand" >
+                            <Label  Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="80" TextColor="CornflowerBlue"/>
+
+                        </Frame>
+                    </DataTemplate>
+                   
+                </cv:CarouselView.ItemTemplate>
+            </cv:CarouselView>
+
+            <!--<controls:CarouselViewControl Orientation="Horizontal" InterPageSpacing="10"  x:Name="Carou" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <controls:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <Frame HasShadow="True"  VerticalOptions="FillAndExpand" Margin="20">
+                            <Label  Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"/>
+
+                        </Frame>
+                    </DataTemplate>
+                </controls:CarouselViewControl.ItemTemplate>
+            </controls:CarouselViewControl>-->
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

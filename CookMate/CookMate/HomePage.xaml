@@ -12,11 +12,8 @@
                         <RowDefinition Height="230"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                   
-                        
-
                     <!--Item-->
-                    <Frame HasShadow="True" Padding="0">
+                    <Frame HasShadow="True" Padding="0" x:Name="Spaghetti">
                         <StackLayout>
                             <Image Source="spaget.jpg" Aspect="AspectFit" />
                             <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>

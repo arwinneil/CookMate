@@ -5,38 +5,29 @@
              x:Class="CookMate.MainPage"
             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
 
-
 >
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="label" Text="Welcome to Xamarin.Forms!"
-                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Label x:Name="label" Text="Welcome to Xamarin.Forms!" HorizontalOptions="CenterAndExpand" FontSize="Large" />
 
 
-            <cv:CarouselView x:Name="Carou" Margin="20"  >
-                <cv:CarouselView.ItemTemplate >
-                    <DataTemplate >
-                        <Frame HasShadow="True"  VerticalOptions="FillAndExpand" >
-                            <Label  Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30" TextColor="CornflowerBlue"/>
+            <cv:CarouselView x:Name="Carou" Margin="5" >
+                <cv:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="20">
 
-                        </Frame>
+                            <Frame  HasShadow="True"  VerticalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout>
+
+                                    <Label  Text="{Binding .}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" FontSize="30"  />
+
+                                 
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
                     </DataTemplate>
-                   
                 </cv:CarouselView.ItemTemplate>
             </cv:CarouselView>
-
-            <!--<controls:CarouselViewControl Orientation="Horizontal" InterPageSpacing="10"  x:Name="Carou" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <controls:CarouselViewControl.ItemTemplate>
-                    <DataTemplate>
-                        <Frame HasShadow="True"  VerticalOptions="FillAndExpand" Margin="20">
-                            <Label  Text="{Binding .}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large"/>
-
-                        </Frame>
-                    </DataTemplate>
-                </controls:CarouselViewControl.ItemTemplate>
-            </controls:CarouselViewControl>-->
-
-
 
         </StackLayout>
     </ContentPage.Content>

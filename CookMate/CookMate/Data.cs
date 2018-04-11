@@ -28,7 +28,7 @@ public partial class Data
 
             //***************************************************  Recipe 2  *********************************************
 
-            new Recipe("Cheesy corn and tuna balls", new List<string>
+            new Recipe("Cheesy Corn and Tuna Balls", new List<string>
 
             //Ingredients
 
@@ -74,7 +74,7 @@ public partial class Data
 
              //***************************************************  Recipe 4  *********************************************
 
-            new Recipe("Spicy Dholl with eggs", new List<string>
+            new Recipe("Spicy dhal with eggs", new List<string>
 
             //Ingredients
 

@@ -4,18 +4,17 @@
              x:Class="CookMate.HomePage">
     <ContentPage.Content>
         <StackLayout>
-
             <StackLayout>
                 <Grid Margin="10" ColumnSpacing="20" RowSpacing="20">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="230"></RowDefinition>
-                        <RowDefinition Height="230"></RowDefinition>
+                        <RowDefinition Height="250"></RowDefinition>
+                        <RowDefinition Height="250"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <!--Item-->
                     <Frame HasShadow="True" Padding="0" x:Name="Spaghetti">
                         <StackLayout>
-                            <Image Source="spaget.jpg" Aspect="AspectFit" />
+                            <Image Source="spaghetti.jpeg" Aspect="AspectFit" />
                             <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
                             <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
                         </StackLayout>
@@ -23,31 +22,31 @@
                     <!--Item-->
 
                     <!--Item-->
-                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="0">
+                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="0" x:Name="Ball">
                         <StackLayout>
-                            <Image Source="spaget.jpg" Aspect="AspectFit" />
-                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
-                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                            <Image Source="Balls.jpeg" Aspect="AspectFit" />
+                            <Label Text="Cheesy Corn and Tuna Balls" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="They're perfect for a snack, quick budget dinner or lunchbox treat." FontSize="Default" Margin="10,0,10,10"></Label>
                         </StackLayout>
                     </Frame>
                     <!--Item-->
 
                     <!--Item-->
-                    <Frame HasShadow="True" Padding="0" Grid.Column="0" Grid.Row="1">
+                    <Frame HasShadow="True" Padding="0" Grid.Column="0" Grid.Row="1" x:Name="Potato">
                         <StackLayout>
-                            <Image Source="spaget.jpg" Aspect="AspectFit" />
-                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
-                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                            <Image Source="potato.jpeg" Aspect="AspectFit" />
+                            <Label Text="Potato pave" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="Thinly slice potatoes and layer with punchy rosemary for an elegant side.." FontSize="Default" Margin="10,0,10,10"></Label>
                         </StackLayout>
                     </Frame>
                     <!--Item-->
 
                     <!--Item-->
-                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="1">
+                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="1" x:Name="Dhalleggs">
                         <StackLayout>
-                            <Image Source="spaget.jpg" Aspect="AspectFit" />
-                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
-                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                            <Image Source="dhalleggs.jpeg" Aspect="AspectFit" />
+                            <Label Text="Spicy dhal with eggs" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text=" Perfect for those busy weeknights!" FontSize="Default" Margin="10,0,10,10"></Label>
                         </StackLayout>
                     </Frame>
                     <!--Item-->

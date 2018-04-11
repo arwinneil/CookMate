@@ -6,7 +6,7 @@
 
         <StackLayout VerticalOptions="Fill">
             <StackLayout VerticalOptions="FillAndExpand">
-                <Image Source="spaget.jpg" HeightRequest="300" Aspect="AspectFill"></Image>
+                <Image x:Name="picture" HeightRequest="300" Aspect="AspectFill"></Image>
                 <Label Text="Spaghetti" FontSize="50"  Margin="10,0,10,0"></Label>
                 <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="20" Margin="10,0,10,10"></Label>
             </StackLayout>

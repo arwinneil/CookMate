@@ -194,3 +194,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+CookMate/CookMate.Android/Resources/drawable/logo.jpg

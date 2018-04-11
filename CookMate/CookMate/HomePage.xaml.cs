@@ -14,7 +14,7 @@ namespace CookMate
             {
                 Command = new Command(() =>
                 {
-                    Navigation.PushAsync(new DetailPage("Spaghetti"));
+                    Navigation.PushAsync(new DetailPage("Spaghetti", "Try this delicious spaghetti bolognese for a classic family favourite."));
                 })
             });
 
@@ -22,7 +22,7 @@ namespace CookMate
             {
                 Command = new Command(() =>
                 {
-                    Navigation.PushAsync(new DetailPage("Cheesy Corn and Tuna Balls"));
+                    Navigation.PushAsync(new DetailPage("Cheesy Corn and Tuna Balls", "They're perfect for a snack, quick budget dinner or lunchbox treat."));
                 })
             });
 
@@ -30,7 +30,7 @@ namespace CookMate
             {
                 Command = new Command(() =>
                 {
-                    Navigation.PushAsync(new DetailPage("Potato Pave"));
+                    Navigation.PushAsync(new DetailPage("Potato Pave", "Thinly slice potatoes and layer with punchy rosemary for an elegant side."));
                 })
             });
 
@@ -38,7 +38,7 @@ namespace CookMate
             {
                 Command = new Command(() =>
                 {
-                    Navigation.PushAsync(new DetailPage("Spicy dhal with eggs"));
+                    Navigation.PushAsync(new DetailPage("Spicy dhal with eggs", "Perfect for those busy weeknights!"));
                 })
             });
         }

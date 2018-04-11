@@ -36,7 +36,7 @@
                         <StackLayout>
                             <Image Source="potato.jpeg" Aspect="AspectFit" />
                             <Label Text="Potato pave" FontSize="Medium" Margin="10,0,10,0"></Label>
-                            <Label Text="Thinly slice potatoes and layer with punchy rosemary for an elegant side.." FontSize="Default" Margin="10,0,10,10"></Label>
+                            <Label Text="Thinly slice potatoes and layer with punchy rosemary for an elegant side." FontSize="Default" Margin="10,0,10,10"></Label>
                         </StackLayout>
                     </Frame>
                     <!--Item-->

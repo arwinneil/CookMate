@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,31 +8,42 @@ namespace CookMate
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailPage : ContentPage
     {
-        public DetailPage(string x)
+        private string _name;
+
+        public DetailPage(string name, string desc)
         {
             InitializeComponent();
-            Title = "Recipe Details";
-            picture.Source = "spaget.jpg";
 
-            if (x == "Cheesy Corn and Tuna Balls")
+            _name = name;
+
+            Title = "Recipe Details";
+            title.Text = name;
+            description.Text = desc;
+
+        
+
+            if (name == "Cheesy Corn and Tuna Balls")
                 picture.Source = "Balls.jpeg";
 
-            if (x == "Spaghetti")
+            if (name == "Spaghetti")
                 picture.Source = "spaghetti.jpeg";
 
-            if (x == "Potato Pave")
+            if (name == "Potato Pave")
                 picture.Source = "potato.jpeg";
 
-            if (x == "Spicy dhal with eggs")
+            if (name == "Spicy dhal with eggs")
                 picture.Source = "dhalleggs.jpeg";
+
+            Recipe recipe = Data.recipes.Single(r => r.Name == name);
         }
 
         private void Button_Pressed(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage()
+            Navigation.PushAsync(new MainPage(_name)
             {
-                Title = this.Title
+                Title = _name
             });
+            
         }
     }
 }

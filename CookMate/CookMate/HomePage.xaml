@@ -3,12 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CookMate.HomePage">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
             <StackLayout>
                 <Grid Margin="10" ColumnSpacing="20" RowSpacing="20">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="250"></RowDefinition>
                         <RowDefinition Height="250"></RowDefinition>
+                        <RowDefinition Height="200"></RowDefinition>
+                        <RowDefinition Height="250"></RowDefinition>
+                     
                     </Grid.RowDefinitions>
 
                     <!--Item-->
@@ -49,9 +52,44 @@
                             <Label Text=" Perfect for those busy weeknights!" FontSize="Default" Margin="10,0,10,10"></Label>
                         </StackLayout>
                     </Frame>
+                    
+                    <!-- Horizontl Item-->
+
+                    <Frame HasShadow="True" Padding="0" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="brownie.jpeg" WidthRequest="220" Aspect="AspectFill" />
+                            <StackLayout>
+                                <Label Text="14 brownie reinventions all chocolate lovers should try" FontSize="Medium" Margin="10,0,10,0"></Label>
+                                <Label Text="The humble chocolate brownie has come a long way in recent years. We reveal the amazing ways you can turn it into something really special." FontSize="Default" Margin="10,0,10,10"></Label>
+                                <Label Text="READ >" FontSize="Default" Margin="10,0,10,0" TextColor="LightGray"></Label>
+                            </StackLayout>
+                          
+                        </StackLayout>
+                    </Frame>
+                    <!-- Horizontl Item-->
+             
+                    
+                    <!--Item-->
+                    <Frame HasShadow="True" Padding="0" Grid.Column="0" Grid.Row="3">
+                        <StackLayout>
+                            <Image Source="spaghetti.jpeg" Aspect="AspectFit" />
+                            <Label Text="Spaghetti" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="Try this delicious spaghetti bolognese for a classic family favourite." FontSize="Default" Margin="10,0,10,10"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <!--Item-->
+
+                    <!--Item-->
+                    <Frame HasShadow="True" Padding="0" Grid.Column="1" Grid.Row="3">
+                        <StackLayout>
+                            <Image Source="Balls.jpeg" Aspect="AspectFit" />
+                            <Label Text="Cheesy Corn and Tuna Balls" FontSize="Medium" Margin="10,0,10,0"></Label>
+                            <Label Text="They're perfect for a snack, quick budget dinner or lunchbox treat." FontSize="Default" Margin="10,0,10,10"></Label>
+                        </StackLayout>
+                    </Frame>
                     <!--Item-->
                 </Grid>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

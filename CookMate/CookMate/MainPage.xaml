@@ -8,8 +8,7 @@
 >
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="label" Text="Welcome to Xamarin.Forms!" HorizontalOptions="CenterAndExpand" FontSize="Large" />
-
+            <Label x:Name="label" Text="Welcome to Xamarin.Forms!" HorizontalOptions="CenterAndExpand" FontSize="Large" IsVisible="False"/>
 
             <cv:CarouselView x:Name="Carou" Margin="5" >
                 <cv:CarouselView.ItemTemplate>
@@ -19,11 +18,12 @@
                             <Frame  HasShadow="True"  VerticalOptions="FillAndExpand" CornerRadius="10">
                                 <StackLayout>
 
-                                    <Label  Text="{Binding .}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" FontSize="30"  />
+                                    <Label  Text="{Binding .}" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" FontSize="35" />
 
-                                 
+
                                 </StackLayout>
                             </Frame>
+                          
                         </StackLayout>
                     </DataTemplate>
                 </cv:CarouselView.ItemTemplate>
